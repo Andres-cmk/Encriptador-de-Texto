@@ -61,7 +61,7 @@ body{
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid #9fd6e7;
+    border: 1px solid #b2d8e4;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;
@@ -84,12 +84,12 @@ body{
    
 .boton::before {
     left: -10px;
-    background: #7fcfcf;
+    background: #beecec;
    }
    
 .boton::after {
     right: -10px;
-    background: #7fcfcf;
+    background: #beecec;
    }
    
 .boton:hover::before,
@@ -120,8 +120,9 @@ body{
 
 .imagen img {
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 20px;
+
 }
 .mensaje {
     font-size: 18px;
@@ -132,4 +133,7 @@ body{
 .imagen h3 {
     font-size: 16px;
     color: #6C757D;
+}
+span{
+    margin-left: 15px;
 }
