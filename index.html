@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <link rel="shortcut icon" href="imagenes/file-solid.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8234d7916b.js" crossorigin="anonymous"></script>
 </head>
@@ -28,8 +28,8 @@
                 </p>
 
                 <div class="botones">
-                    <button class="boton"><p>Encriptar</p></button>
-                    <button class="boton"><p>Desencriptar</p></button>
+                    <button class="boton" id="encriptar"><p>Encriptar</p></button>
+                    <button class="boton" id="desencriptar"><p>Desencriptar</p></button>
                 </div>
             </div>
 
@@ -38,8 +38,20 @@
                 <p class="mensaje">Ningún mensaje fue encontrado</p>
                 <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
             </div>
+
+            <div class="encriptado" style="display: none;">
+                <label for="texto_result">
+                    <textarea id="texto_result"></textarea>
+                </label>
+
+                <label for="copiar">
+                    <button class="boton" id="copiar">Copiar</button>
+                </label>
+            </div>
+
         </div>
     </main>
 </body>
 
+<script src="script.js"></script>
 </html>
