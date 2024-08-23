@@ -1,0 +1,135 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+
+body{
+    background-color: #D8DFE8;
+}
+
+.logo{
+    text-align: left;
+    padding: 10px;
+}
+
+
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1200px;
+    max-height: 1200px;
+    height: 503px;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.texto label {
+    display: block;
+    margin-bottom: 10px;
+}
+.texto input[type="text"] {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.text_advertencia {
+    font-size: 14px;
+    color: #6C757D;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.boton {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #9fd6e7;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    margin-right: 2px;
+   }
+   
+.boton::before,
+.boton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+.boton::before {
+    left: -10px;
+    background: #7fcfcf;
+   }
+   
+.boton::after {
+    right: -10px;
+    background: #7fcfcf;
+   }
+   
+.boton:hover::before,
+.boton:hover::after {
+    width: 58%;
+   }
+   
+.boton:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+.boton span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.imagen {
+    text-align: center;
+    flex: 1;
+}
+
+.imagen img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.mensaje {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.imagen h3 {
+    font-size: 16px;
+    color: #6C757D;
+}
