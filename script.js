@@ -9,20 +9,22 @@ document.getElementById("encriptar").addEventListener("click", (_) => {
         alert("El texto es requerido");
         return;
     }
-    if(!/^[A-Z0-9\s]*$/.test(input.value)){
+    
+    if((!/\d/.test(input.value) && !/[A-Z]/.test(input.value) && !/[^\w\s]/.test(input.value))){
         document.querySelector("div.imagen").style.display = "none";
         document.querySelector("div.encriptado").style.display = "block";    
         textArea.value = encriptar(input.value);
+        input.value = "";
         return;
     }
-    alert("Enetrada incorrecta");
+    alert("Entrada incorrecta");
     return;
 });
 
 document.getElementById("desencriptar").addEventListener("click", (_) => {
     document.querySelector("div.imagen").style.display = "none";
     document.querySelector("div.encriptado").style.display = "block"; 
-    input.value = desencriptar(textArea.value);
+    textArea.value = desencriptar(input.value);
     return;
 });
 
