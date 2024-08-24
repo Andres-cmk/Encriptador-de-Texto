@@ -173,3 +173,86 @@ span{
 .copiar{
     margin-top: 10px;
 }
+
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .texto, .imagen, .encriptado {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .imagen img {
+        width: 60%;
+    }
+
+    #texto_result {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 16px;
+    }
+
+    .texto, .imagen, .encriptado {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto input[type="text"] {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .boton {
+        width: 100%;
+        max-width: none;
+    }
+
+    .imagen img {
+        width: 60%;
+        max-width: 200px;
+    }
+
+    #texto_result {
+        height: 150px;
+    }
+
+    .text_advertencia {
+        justify-content: flex-start;
+        margin-left: 16px;
+    }
+}
