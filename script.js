@@ -9,7 +9,7 @@ document.getElementById("encriptar").addEventListener("click", (_) => {
         alert("El texto es requerido");
         return;
     }
-    
+
     if((!/\d/.test(input.value) && !/[A-Z]/.test(input.value) && !/[^\w\s]/.test(input.value))){
         document.querySelector("div.imagen").style.display = "none";
         document.querySelector("div.encriptado").style.display = "block";    
@@ -25,6 +25,7 @@ document.getElementById("desencriptar").addEventListener("click", (_) => {
     document.querySelector("div.imagen").style.display = "none";
     document.querySelector("div.encriptado").style.display = "block"; 
     textArea.value = desencriptar(input.value);
+    input.value = "";
     return;
 });
 
